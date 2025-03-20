@@ -5,18 +5,19 @@ export default function Home() {
   return (
     <div className="flex items-center justify-items-center h-screen w-screen">
       <main className="flex flex-col items-center justify-center w-full">
-        <div className="text-3xl p-3 font-bold">
+        <div className="md:text-3xl my-3 mx-7 font-bold">
           <h1>Pardon our appearance - New website is under construction.</h1>
         </div>
-        <Image
-        className="m-5"
-          src="/logo.png"
-          alt="Semple Math Logo"
-          width={490}
-          height={142}
-        />
+        <div className="mx-7 my-3">
+          <Image
+            src="/logo.png"
+            alt="Semple Math Logo"
+            width={490}
+            height={142}
+          />
+        </div>
         <div className="flex flex-col gap-5">
-          <div className="text-xl">
+          <div className="md:text-xl mx-7">
             <p>
               Our new website will be online soon on this page.
               <br />
@@ -24,18 +25,20 @@ export default function Home() {
               touch!
             </p>
           </div>
-          <div className="flex gap-5">
-            <div className="flex gap-2">
-              <MapPin color="var(--button-color)"/>
-              <p><span className="font-bold">Semple Math Inc.</span><br/>65 South Main Street<br/>Mansfield, MA 02048</p>
-            </div>
-            <div className="flex gap-2">
-              <Mail color="var(--button-color)"/>
-              <a href="mailto:wwsemple@gmail.com">wwsemple@gmail.com</a>
-            </div>
-            <div className="flex gap-2">
-              <Phone color="var(--button-color)"/>
-              <p>(888) 868-6284</p>
+          <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row gap-5">
+              <div className="flex gap-2">
+                <MapPin color="var(--button-color)"/>
+                <p><span className="font-bold">Semple Math Inc.</span><br/>65 South Main Street<br/>Mansfield, MA 02048</p>
+              </div>
+              <div className="flex gap-2">
+                <Mail color="var(--button-color)"/>
+                <a href="mailto:wwsemple@gmail.com">wwsemple@gmail.com</a>
+              </div>
+              <div className="flex gap-2">
+                <Phone color="var(--button-color)"/>
+                <p>(888) 868-6284</p>
+              </div>
             </div>
           </div>
         </div>
