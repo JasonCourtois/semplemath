@@ -26,18 +26,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="flex flex-col md:flex-row gap-5">
+            <div className="flex flex-col md:flex-row gap-4">
               <div className="flex gap-2">
                 <MapPin color="var(--button-color)"/>
                 <p><span className="font-bold">Semple Math Inc.</span><br/>65 South Main Street<br/>Mansfield, MA 02048</p>
               </div>
               <div className="flex gap-2">
-                <Mail color="var(--button-color)"/>
-                <a href="mailto:wwsemple@gmail.com">wwsemple@gmail.com</a>
-              </div>
-              <div className="flex gap-2">
                 <Phone color="var(--button-color)"/>
                 <p>(888) 868-6284</p>
+              </div>
+              <div className="flex gap-2">
+                <Mail color="var(--button-color)"/>
+                <a href="mailto:wwsemple@gmail.com">wwsemple@gmail.com</a>
               </div>
             </div>
           </div>
