@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MapPin, Mail, Phone } from "lucide-react";
+import pageLogo from "../../public/logo.svg";
 
 export default function Home() {
   return (
@@ -10,10 +11,8 @@ export default function Home() {
         </div>
         <div className="mx-7 my-3">
           <Image
-            src="/logo.png"
+            src={pageLogo}
             alt="Semple Math Logo"
-            width={490}
-            height={142}
           />
         </div>
         <div className="flex flex-col gap-5">
